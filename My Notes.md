@@ -1,9 +1,8 @@
-This are my notes
-Composed by help of ChatGPT
+# This are my notes
 
----
+Composed and arranged by the help of ChatGPT (GPT 3.5)
 
-**Part 1: Design and Design Patterns**
+September, 5, 2023
 
 **Chapter 1: Introduction to Design Patterns**
 
