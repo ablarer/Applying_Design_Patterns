@@ -1,0 +1,26 @@
+Please jot down your responses for these questions.
+We will go over them after the lab time.
+
+1. What are some of the design patterns you have used in the past?
+
+Facade
+Strategy
+State
+Singleton
+Decorator
+Visitor
+Observer
+Proxy
+Builder
+
+
+Template Method
+
+
+
+2. What are some of the challenges you've faced in applying design patterns?
+
+The complexity that may come from the use of certain patterns may not make it worth it
+Thinking in the ways the pattern does is not easy, sometimes not the common way
+Patterns may emerge as we refactor the code - so we should give that opportunity
+Dealing with mismatch of patterns that may be forced upon from different parts of a code or a framework.

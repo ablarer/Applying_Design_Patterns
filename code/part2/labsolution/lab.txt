@@ -1,0 +1,9 @@
+A company has different employees, Staff, Executive, Sales Person, etc. Each one of then travel from time to time and will have to book for their travel.
+Each travel includes a flight, car rental, and a hotel accommodation. Depending on the nature of their employment they can book different levels of facilities.
+For example,
+
+Staff         Economy Flight Ticket         Economy Car        Three Star Hotel
+Executive     First class Flight Ticket     Luxury Car         Five Star Hotel
+Sales Person  Business class Flight Ticket  Luxury Car        Three Star Hotel
+
+Design the code so that when a travel is booked, we can query an employee to find the booking details. Please work with the partial code given.

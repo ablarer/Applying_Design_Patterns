@@ -1,0 +1,165 @@
+
+
+The presence of many patterns in a language is often a sign of
+weakness of the language than its power.
+
+The more powerful a language is then less we will talk about patterns
+because a lot of these become mere features of the language.
+
+A design pattern is a set of possible solutions for a commonly recurring
+problem.
+
+These problems are so common that a lot of us need solutions for these.
+
+Patterns are solutions but are not libraries of code that we can download
+and use.
+
+Problem   ---------x--------> Design Pattern(s)
+
+
+Problem                       Design Pattern(s)
+   |                                 ^
+   |                                 |
+   |                                 |
+   |                                 |
+   |                                 |
+   |                                 |
+   v                                 |
+           Identify the relevant
+             Design Principles
+
+
+Suppose we have a collection of units, like Boiler, Vessel, ...
+We want to be able to process the different units in my collection
+without regard to the type of those units.
+
+We do not want our code that loops through to change if we want to
+use a collection of Boilers vs. a collection of Vessels.
+
+We want decoupling. We may use dependency inversion or inversion of
+control to achieve this. We could create an abstraction called Unit
+and have the collection of Unit to iterate over.
+
+The principle: Dependency Inversion Principle (DIP)
+
+What patterns may really play a role?
+
+Iterator
+
+As it turns out, every single design pattern has a design principle as
+an underpinning.
+
+Iterator       DIP
+Strategy
+State
+
+Abstract Factory    Open Closed Principle (OCP)
+Factory Method
+
+Composite Pattern   Liskov's Substitution Principle (LSP)
+
+Compose Method Pattern    Single Level of Abstraction Principle (SLAP)
+
+
+
+
+
+In Java, we could do something like:
+
+import java.util.*;
+
+class Book {}
+class Music {}
+
+public class Sample {
+  public static Object create(Class<?> klass) throws Exception {
+    return klass.newInstance();
+  }
+
+  public static void main(String[] args) throws Exception {
+    Book book = (Book) create(Book.class);
+
+    System.out.println(book);
+  }
+}
+
+
+In Ruby, we can do the following:
+
+class Book; end
+class Music; end
+
+def create(klass)
+  klass.new
+end
+
+#In languages like C++, C#, Java, etc. new is a keyword.
+#constructors are not polymorphic
+
+#In languages like Ruby, new is a function and is polymorphic.
+
+puts create Book
+puts create Music
+
+
+
+The concept of abstract factory does not really exist in languages like
+Ruby because new is naturally polymorphic and can be used to provide
+decoupling of the client from the classes more easily. OCP.
+
+
+
+Language designers (unfortunately) have ideologies.
+
+The folks who created Java (the first set of Java creators) had
+the OO ideologies in mind - they wanted everything to be an object
+even though they were not.
+
+
+1.toString(); //1 is primitive, not an object.
+
+So, as a result they wanted to have everything within a class. That lead
+to creating SAMs or Single Abstract Method Interfaces.
+
+Finally, in Java 8, they decided to let go of that ideologies and started
+to embrace functions as first class citizens.
+
+
+Classification of patterns: What is the purpose, intent
+Scope of patterns: what is the predominant solution that is used in the pattern?
+
+We may use inheritance as the predominant solution or use delegation
+as a predominant solution. We often use both, but one is predominant
+compared to the other.
+
+Which of these, from the design point of view, gives us more flexibility:
+inheritance
+delegation
+
+Delegation gives more flexibility, whereas inheritance leads to tight coupling
+
+As it turns out, most design patterns identified use delegation and only
+a few design patterns use inheritance as the predominant solution.
+
+Delegation                           Inheritance
+Abstract Factory                     Factory Method
+Iterator                             Template
+State
+Strategy
+Composite
+Chain of responsibility
+decorator
+...
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+Please jot down your responses for these questions.
+We will go over them after the lab time.
+
+1. What are some of the design patterns you have used in the past?
+
+2. What are some of the challenges you've faced in applying design patterns?
+

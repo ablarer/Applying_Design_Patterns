@@ -213,6 +213,12 @@ To prevent the creation of multiple instances of a Singleton in a multi-threaded
 
 By using one of these approaches, you can ensure that your Singleton remains thread-safe in a multi-threaded environment, preventing the creation of multiple instances. However, it's essential to choose the approach that best suits your performance and resource utilization requirements.
 
+**1.1.3 See also**
+
+How do you deal with the potential memory leaks and performance issues of using a singleton pattern in Java?
+
+https://www.linkedin.com/advice/3/how-do-you-deal-potential-memory-leaks-performance
+
 **1.2 Why are Design Patterns Crucial?**
 
 Design patterns offer several advantages, making them essential in software development:
